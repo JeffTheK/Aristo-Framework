@@ -28,8 +28,6 @@ if option == "1":
     print "\033[1;33m[*] Loading...\033[0m"
     os.system('apt-get install python3-pip')
     os.system('easy_install pip')
-    import pip
-    
     os.system('sudo apt-get install libjpeg-dev libfreetype6 zlib1g-dev')
     os.system('pip2.7 install --upgrade beautifulsoup4')
     os.system('pip install google')
