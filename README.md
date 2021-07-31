@@ -7,7 +7,7 @@ In order to install this program, it is crucial that you are on a __Linux-based_
 
 First, `git clone`.
 
-    git clone https://github.com/toxic-ig/Aristo.git
+    git clone https://github.com/AristodamusAdairs/Aristo-Framework
 
 Change directory, and then run the installer script (Must be root or have superuser permissions):
 
@@ -37,12 +37,4 @@ Once finished, execute with:
 
 ### Issues?
 
-If you have any issues regarding the source code of this framework, as well as any errors you have encountered, please contact me at 
-
-    Xmpp: toxic-ig@exploit.im
-    Email: toxicnull@gmail.com
-    Instagram: @_t0x1c
-    Twitter: @toxicnull
-    Kik: toxicnull
-    Discord: #9073
-    
+If you have any issues regarding the source code of this framework, as well as any errors you have encountered, please create a issue
