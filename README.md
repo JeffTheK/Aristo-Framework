@@ -33,7 +33,7 @@ Once finished, execute with:
 ---------------------------
 
 ### Donations?
-#### www.paypal.me/toxicnull
+#### I am damn rich
 
 ### Issues?
 
