@@ -312,7 +312,7 @@ def aristomain():
                 print (""+R+"[!] " + color.UNDERLINE + "\033[91m" + "Please enter an option!" + color.END)
             else:
                 print (""+R+"[!] " + color.UNDERLINE + "\033[91m" + "That is not an option!" + color.END)
-            except KeyboardInterrupt:
+        except KeyboardInterrupt:
             print (""+R+"[!] " + color.UNDERLINE + "\033[91m" + "\nCtrl-C Pressed! Use 'exit' to close the tool!" + color.END)
             aristomain()
 aristomain()
