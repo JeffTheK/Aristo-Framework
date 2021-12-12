@@ -20,14 +20,14 @@ ipaddr = urlopen('http://ip.42.pl/raw').read()
 def_gw_device = os.popen("route | grep '^default' | grep -o '[^ ]*$'").read()
 
 def info():
-    print ""+W+"+--------------------------+"
-    print "|"+C+" Mac Address: " + mac_address + ""+W+"+--------------------------+"
-    print "|"+R+" Local address: " + localaddr
-    print ""+W+"+--------------------------+"
-    print "|"+G+" IP: " + ipaddr
-    print ""+W+"+--------------------------+"
-    print "|"+T+" Operating System: " + platform.system()
-    print ""+W+"+--------------------------+"
-    print "|"+P+" Name: " + platform.node()
-    print ""+W+"+--------------------------+"
-    print "|"+O+" Interface: " + def_gw_device +W+"+--------------------------+"
+    print(""+W+"+--------------------------+")
+    print("|"+C+" Mac Address: " + mac_address + ""+W+"+--------------------------+")
+    print("|"+R+" Local address: " + localaddr)
+    print(""+W+"+--------------------------+")
+    print("|"+G+" IP: " + ipaddr)
+    print(""+W+"+--------------------------+")
+    print("|"+T+" Operating System: " + platform.system())
+    print(""+W+"+--------------------------+")
+    print("|"+P+" Name: " + platform.node())
+    print(""+W+"+--------------------------+")
+    print("|"+O+" Interface: " + def_gw_device +W+"+--------------------------+")
