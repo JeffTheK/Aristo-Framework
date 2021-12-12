@@ -30,10 +30,10 @@ def siteexists():
     try:
         site = raw_input(''+T+'' + color.UNDERLINE + 'Site>' + color.END)
         urllib2.urlopen(site)
-    except urllib2.HTTPError, e:
+    except urllib2.HTTPError as e:
         print (''+R+'Error:' + color.END)
         print(e.code)
-    except urllib2.URLError, e:
+    except urllib2.URLError as e:
         print (''+R+'Error:' + color.END)
         print(e.args)
     else:
