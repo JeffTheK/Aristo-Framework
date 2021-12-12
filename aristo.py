@@ -158,7 +158,7 @@ spell = "helpp", "hellp", "bannerr", "baner", "emial", "HELP", "hwlp", "wesbite"
 def aristomain():
     while True:
         try:
-            main = raw_input(''+G+'' + color.BOLD + color.UNDERLINE + 'Tri>' + color.END)
+            main = input(''+G+'' + color.BOLD + color.UNDERLINE + 'Tri>' + color.END)
             if main in swear:
                 print(""+R+"[!] " + color.UNDERLINE + "\033[91m" + "Watch your language!" + color.END)
             elif main in spell:
