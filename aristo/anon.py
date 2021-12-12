@@ -1,6 +1,7 @@
 import mechanize
-W  = '\033[0m'  # white (normal)
-R  = '\033[31m' # red
+import color
+from color import *
+
 def anon():
     br = mechanize.Browser()
 
