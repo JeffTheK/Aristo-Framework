@@ -94,7 +94,7 @@ Feel free to modify, use, change, market, do whatever you want with it as long a
 Also by using this tool, you should try to make this tool better, try to stay positive, try to help others, try to learn from one another, try stay out of drama, try offer free hugs when possible (and make sure recipient agrees to mutual hug), and try to do everything you can to be awesome.
 Aristo is designed purely for good and not evil. If you are planning on using this tool for malicious purposes that are not authorized by the company you are performing assessments for, you are violating the terms of service and license of this toolset. By hitting yes (only one time), you agree to the terms of service and that you will only use this tool for lawful purposes only.
 """)
-    agree = raw_input(''+G+'' + color.UNDERLINE + 'Do you agree to these terms and conditions?>' + color.END)
+    agree = input(''+G+'' + color.UNDERLINE + 'Do you agree to these terms and conditions?>' + color.END)
     if agree == "yes":
         print (''+G+'' + color.UNDERLINE + 'Thanks!' + color.END)
         time.sleep(3)
