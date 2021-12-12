@@ -6,7 +6,7 @@ from color import *
 
 def clone():
     print (''+T+'Remember to put https:// in front of the website!')
-    hey = input(''+T+'' + color.UNDERLINE + 'Website>' + color.END)
+    hey = raw_input(''+T+'' + color.UNDERLINE + 'Website>' + color.END)
     response = urllib2.urlopen(hey)
     page_source = response.read()
 

@@ -231,7 +231,7 @@ def aristomain():
                 print(''+T+'' + color.UNDERLINE + 'Twitter:'+W+'' + color.BOLD + ' @toxicnull' + color.END)
             elif main == "ping":
                 while True:
-                    hostname = input(''+T+'' + color.UNDERLINE + 'Host>' + color.END)
+                    hostname = raw_input(''+T+'' + color.UNDERLINE + 'Host>' + color.END)
                     os.system("ping " + hostname)
             elif main == "craft":
                 while True:
@@ -246,13 +246,13 @@ def aristomain():
                 banner1()
             elif main == "speak":
                 while True:
-                    speak = input(''+T+'' + color.UNDERLINE + 'What to say>' + color.END)
+                    speak = raw_input(''+T+'' + color.UNDERLINE + 'What to say>' + color.END)
                     os.system('espeak "' + speak + '"')
             elif main == "clone":
                 clone()
             elif main == "cd":
                 try:
-                    path = input(''+T+'' + color.UNDERLINE + 'Directory>' + color.END)
+                    path = raw_input(''+T+'' + color.UNDERLINE + 'Directory>' + color.END)
                     os.chdir(path)
                 except OSError:
                     print (""+R+"[!] " + color.UNDERLINE + "\033[91m" + "That is not a directory!" + color.END)
@@ -263,13 +263,13 @@ def aristomain():
                 print(color.UNDERLINE + ''+C+'toxic is a sp00ky h4ck3r' + color.END)
             elif main == "website":
                 while True:
-                    a = input(''+T+'' + color.UNDERLINE + 'Website>' + color.END)
+                    a = raw_input(''+T+'' + color.UNDERLINE + 'Website>' + color.END)
                     try:
                         print(socket.gethostbyname(a))
                     except socket.gaierror:
                         print((""+R+"[!] " + color.UNDERLINE + "\033[91m" + "Apparently host is unknown! :/" + color.END))
             elif main == "ip":
-                ip = input(''+T+'' + color.UNDERLINE + 'IP>' + color.END)
+                ip = raw_input(''+T+'' + color.UNDERLINE + 'IP>' + color.END)
                 if ip is None or ip == "":
                     sys.exit(""+R+"[!] " + color.UNDERLINE + "\033[91m" + "Please enter an IP!" + color.END)
                 reversed_dns = socket.getfqdn(ip)

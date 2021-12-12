@@ -8,11 +8,11 @@ from color import *
 def sms():
     print(""+T+" ")
     print("Put the @ sign before the provider")
-    provider = input(color.UNDERLINE + 'Enter cellular provider>' + color.END)
+    provider = raw_input(color.UNDERLINE + 'Enter cellular provider>' + color.END)
     print(""+T+" ")
-    phone_num = input(color.UNDERLINE + 'Victims phone number>' + color.END) + provider
+    phone_num = raw_input(color.UNDERLINE + 'Victims phone number>' + color.END) + provider
     print(""+T+" ")
-    gmail = input(color.UNDERLINE + 'Your email>' + color.END)
+    gmail = raw_input(color.UNDERLINE + 'Your email>' + color.END)
     print(""+T+" ")
     password = getpass(color.UNDERLINE + 'Password>' + color.END)
 
@@ -20,7 +20,7 @@ def sms():
     o.starttls()
     o.login(gmail, password)
 
-    message = input(color.UNDERLINE + 'Message>' + color.END)
+    message = raw_input(color.UNDERLINE + 'Message>' + color.END)
     print(""+T+" ")
     counter = input(color.UNDERLINE + 'How many times>' + color.END)
     print(""+T+" ")
