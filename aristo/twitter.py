@@ -41,14 +41,14 @@ def twitter():
             likes = details[3].text.encode("utf-8")
             pic = s.find("a" ,{"class":"ProfileAvatar-container u-block js-tooltip profile-picture"})["href"].encode("utf-8")
             date = s.find("span" ,{"class":"ProfileHeaderCard-joinDateText js-tooltip u-dir"})["title"].encode("utf-8")
-            print G + " Name: " + W + name
-            print G + " Following: " + W + following
-            print G + " Followers: " + W + followers
-            print G + " Likes: " + W + likes
-            print G + " This Account was made on: " + W + date
-            print G + " Full Profile Picture: " + W + pic
+            print(G + " Name: " + W + name)
+            print(G + " Following: " + W + following)
+            print(G + " Followers: " + W + followers)
+            print(G + " Likes: " + W + likes)
+            print(G + " This Account was made on: " + W + date)
+            print(G + " Full Profile Picture: " + W + pic)
         except:
-            print R + "Error <Twitter_Profile_link>/<username> is not correct"
+            print(R + "Error <Twitter_Profile_link>/<username> is not correct")
             sys.exit(0)
 
 

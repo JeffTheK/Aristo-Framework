@@ -27,7 +27,7 @@ def xss():
     with open(fname) as f:
         content = f.readlines()
     payloads = [x.strip() for x in content]
-    print T + "Works best if there is a query at the end. eg. http://example.com?search=" + W
+    print(T + "Works best if there is a query at the end. eg. http://example.com?search=" + W)
     url = raw_input(''+T+'' + color.UNDERLINE + 'Full URL> ' + color.END)
     vuln = []
     for payload in payloads:
@@ -39,7 +39,7 @@ def xss():
             if(payload not in vuln):
                 vuln.append(payload)
         else:
-            print R + "[!] Not vulnerable!" + W
+            print(R + "[!] Not vulnerable!" + W)
 
     print("--------------------\n" + G + "Available Payloads:" + W)
     print('\n'.join(vuln))
