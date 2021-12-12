@@ -29,7 +29,7 @@ class color:
     FAIL = '\033[91m'
     ENDC = '\033[0m'
 
-from urllib2 import Request, urlopen, URLError, HTTPError
+from urllib.request import Request, urlopen, URLError, HTTPError
 def admin():
     def Space(j):
         i = 0
