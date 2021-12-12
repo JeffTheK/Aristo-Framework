@@ -212,107 +212,107 @@ def aristomain():
                 print(color.BLUE + "decode hex"+W+" - hex to text")
                 print(""+W+"+----------------------------+")
             elif main == "sms":
-            sms()
-        elif main == "xss":
-            xss()
-        elif main == "sql":
-            sql()
-        elif main == "anonymous":
-            anon()
-        elif main == "encode base64":
-            encode()
-        elif main == "decode base64":
-            decode()
-        elif main == "email":
-            smtp()
-        elif main == "quote":
-            quote()
-        elif main == "spoof email":
-            spoofemail()
-        elif main == "zip":
-            zipfile()
-        elif main == "decode hex":
-            decode1()
-        elif main == "encode hex":
-            encode1()
-        elif main == "google":
-            googleSearch()
-        elif main == "web":
-            web()
-        elif main == "siteexists":
-            siteexists()
-        elif main == "qr":
-            gen_qrcode()
-        elif main == "twitter":
-            twitter()
-        elif main == "anonymous":
-            anon()
-        elif main == "contact":
-            print(''+T+'' + color.UNDERLINE + 'Skype:'+W+'' + color.BOLD + ' toxicnull@gmail.com' + color.END)
-            print(''+T+'' + color.UNDERLINE + 'Instagram:'+W+'' + color.BOLD + ' @_t0x1c - www.instagram.com/_t0x1c' + color.END)
-            print(''+T+'' + color.UNDERLINE + 'Email me:'+W+'' + color.BOLD + ' toxicnull@gmail.com' + color.END)
-            print(''+T+'' + color.UNDERLINE + 'XMPP:'+W+'' + color.BOLD + ' toxic-ig@exploit.im' + color.END)
-        print(''+T+'' + color.UNDERLINE + 'Twitter:'+W+'' + color.BOLD + ' @toxicnull' + color.END)
-        elif main == "ping":
-        while True:
+                sms()
+            elif main == "xss":
+                xss()
+            elif main == "sql":
+                sql()
+            elif main == "anonymous":
+                anon()
+            elif main == "encode base64":
+                encode()
+            elif main == "decode base64":
+                decode()
+            elif main == "email":
+                smtp()
+            elif main == "quote":
+                quote()
+            elif main == "spoof email":
+                spoofemail()
+            elif main == "zip":
+                zipfile()
+            elif main == "decode hex":
+                decode1()
+            elif main == "encode hex":
+                encode1()
+            elif main == "google":
+                googleSearch()
+            elif main == "web":
+                web()
+            elif main == "siteexists":
+                siteexists()
+            elif main == "qr":
+                gen_qrcode()
+            elif main == "twitter":
+                twitter()
+            elif main == "anonymous":
+                anon()
+            elif main == "contact":
+                print(''+T+'' + color.UNDERLINE + 'Skype:'+W+'' + color.BOLD + ' toxicnull@gmail.com' + color.END)
+                print(''+T+'' + color.UNDERLINE + 'Instagram:'+W+'' + color.BOLD + ' @_t0x1c - www.instagram.com/_t0x1c' + color.END)
+                print(''+T+'' + color.UNDERLINE + 'Email me:'+W+'' + color.BOLD + ' toxicnull@gmail.com' + color.END)
+                print(''+T+'' + color.UNDERLINE + 'XMPP:'+W+'' + color.BOLD + ' toxic-ig@exploit.im' + color.END)
+                print(''+T+'' + color.UNDERLINE + 'Twitter:'+W+'' + color.BOLD + ' @toxicnull' + color.END)
+            elif main == "ping":
+            while True:
                 hostname = raw_input(''+T+'' + color.UNDERLINE + 'Host>' + color.END)
                 os.system("ping " + hostname)
-        elif main == "craft":
-        while True:
+            elif main == "craft":
+            while True:
                 table()
-        elif main == "whois":
-            whoisweb()
-        elif main == "admin":
-            admin()
-        elif main == "banner":
-            os.system('clear')
-            banner()
-            banner1()
-        elif main == "speak":
-        while True:
-                speak = raw_input(''+T+'' + color.UNDERLINE + 'What to say>' + color.END)
-                os.system('espeak "' + speak + '"')
-        elif main == "clone":
-            clone()
-        elif main == "cd":
-            try:
-                path = raw_input(''+T+'' + color.UNDERLINE + 'Directory>' + color.END)
-                os.chdir(path)
-            except OSError:
-                print (""+R+"[!] " + color.UNDERLINE + "\033[91m" + "That is not a directory!" + color.END)
-        elif main == "tool":
-            print(color.UNDERLINE + ''+C+'Version: ' + (VersionNum) + color.END)
-        print(color.UNDERLINE + ''+C+'34 options to choose from!' + color.END)
-            print(color.UNDERLINE + ''+C+'Time spent on it: 76 hours - 14 minutes' + color.END)
-            print(color.UNDERLINE + ''+C+'toxic is a sp00ky h4ck3r' + color.END)
-        elif main == "website":
-        while True:
-                a = raw_input(''+T+'' + color.UNDERLINE + 'Website>' + color.END)
+            elif main == "whois":
+                whoisweb()
+            elif main == "admin":
+                admin()
+            elif main == "banner":
+                os.system('clear')
+                banner()
+                banner1()
+            elif main == "speak":
+            while True:
+                    speak = raw_input(''+T+'' + color.UNDERLINE + 'What to say>' + color.END)
+                    os.system('espeak "' + speak + '"')
+            elif main == "clone":
+                clone()
+            elif main == "cd":
                 try:
-                    print socket.gethostbyname(a)
-                except socket.gaierror:
-                    print (""+R+"[!] " + color.UNDERLINE + "\033[91m" + "Apparently host is unknown! :/" + color.END)
-        elif main == "ip":
-            ip = raw_input(''+T+'' + color.UNDERLINE + 'IP>' + color.END)
-            if ip is None or ip == "":
-                sys.exit(""+R+"[!] " + color.UNDERLINE + "\033[91m" + "Please enter an IP!" + color.END)
-            reversed_dns = socket.getfqdn(ip)
-            geoip = urllib.urlopen('http://api.hackertarget.com/geoip/?q='
-                               + ip).read().rstrip()
-            print (""+G+"[*] " + color.UNDERLINE + "\033[91m" + "IP Info" + color.END)
-            print geoip
-        elif main == "clear":
-            os.system('clear')
-            elif main == "exit":
-            print (""+G+"[*] " + color.UNDERLINE + "\033[91m" + "Exiting..." + color.END)
-            print (""+G+"[*] " + color.UNDERLINE + "\033[92m" + "GoodBye!" + color.END)
-            time.sleep(0.2)
-            sys.exit()
-        elif main == "":
-            print (""+R+"[!] " + color.UNDERLINE + "\033[91m" + "Please enter an option!" + color.END)
-            else:
-            print (""+R+"[!] " + color.UNDERLINE + "\033[91m" + "That is not an option!" + color.END)
-        except KeyboardInterrupt:
-        print (""+R+"[!] " + color.UNDERLINE + "\033[91m" + "\nCtrl-C Pressed! Use 'exit' to close the tool!" + color.END)
-        aristomain()
+                    path = raw_input(''+T+'' + color.UNDERLINE + 'Directory>' + color.END)
+                    os.chdir(path)
+                except OSError:
+                    print (""+R+"[!] " + color.UNDERLINE + "\033[91m" + "That is not a directory!" + color.END)
+            elif main == "tool":
+                print(color.UNDERLINE + ''+C+'Version: ' + (VersionNum) + color.END)
+            print(color.UNDERLINE + ''+C+'34 options to choose from!' + color.END)
+                print(color.UNDERLINE + ''+C+'Time spent on it: 76 hours - 14 minutes' + color.END)
+                print(color.UNDERLINE + ''+C+'toxic is a sp00ky h4ck3r' + color.END)
+            elif main == "website":
+            while True:
+                    a = raw_input(''+T+'' + color.UNDERLINE + 'Website>' + color.END)
+                    try:
+                        print socket.gethostbyname(a)
+                    except socket.gaierror:
+                        print (""+R+"[!] " + color.UNDERLINE + "\033[91m" + "Apparently host is unknown! :/" + color.END)
+            elif main == "ip":
+                ip = raw_input(''+T+'' + color.UNDERLINE + 'IP>' + color.END)
+                if ip is None or ip == "":
+                    sys.exit(""+R+"[!] " + color.UNDERLINE + "\033[91m" + "Please enter an IP!" + color.END)
+                reversed_dns = socket.getfqdn(ip)
+                geoip = urllib.urlopen('http://api.hackertarget.com/geoip/?q='
+                                   + ip).read().rstrip()
+                print (""+G+"[*] " + color.UNDERLINE + "\033[91m" + "IP Info" + color.END)
+                print geoip
+            elif main == "clear":
+                os.system('clear')
+                elif main == "exit":
+                print (""+G+"[*] " + color.UNDERLINE + "\033[91m" + "Exiting..." + color.END)
+                print (""+G+"[*] " + color.UNDERLINE + "\033[92m" + "GoodBye!" + color.END)
+                time.sleep(0.2)
+                sys.exit()
+            elif main == "":
+                print (""+R+"[!] " + color.UNDERLINE + "\033[91m" + "Please enter an option!" + color.END)
+                else:
+                print (""+R+"[!] " + color.UNDERLINE + "\033[91m" + "That is not an option!" + color.END)
+            except KeyboardInterrupt:
+            print (""+R+"[!] " + color.UNDERLINE + "\033[91m" + "\nCtrl-C Pressed! Use 'exit' to close the tool!" + color.END)
+            aristomain()
 aristomain()
