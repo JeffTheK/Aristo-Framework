@@ -1,6 +1,6 @@
 import os, io, platform, sys, socket
 from time import sleep
-from urllib2 import urlopen
+from urllib.request import urlopen
 
 W  = '\033[0m'  # white (normal)
 R  = '\033[31m' # red
