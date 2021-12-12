@@ -40,7 +40,7 @@ def admin():
 
     def findAdmin():
         f = open("link.txt","r")
-        link = input(T + color.UNDERLINE + 'Site>' + color.END)
+        link = raw_input(T + color.UNDERLINE + 'Site>' + color.END)
         print("\n\nAvailable links : \n")
         print(""+G+"[*] "+W+"Scanning...")
         while True:

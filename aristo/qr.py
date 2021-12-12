@@ -6,9 +6,9 @@ import color
 from color import *
 
 def gen_qrcode():
-    url = input(''+T+'' + color.UNDERLINE + 'Website or text>' + color.END)
+    url = raw_input(''+T+'' + color.UNDERLINE + 'Website or text>' + color.END)
     print(""+C+"Enter the name of the output file without the extension")
-    name = input(''+T+'' + color.UNDERLINE + 'Output>' + color.END)
+    name = raw_input(''+T+'' + color.UNDERLINE + 'Output>' + color.END)
     qr = qrcode.QRCode(5, error_correction=qrcode.constants.ERROR_CORRECT_L)
     qr.add_data(url)
     qr.make()

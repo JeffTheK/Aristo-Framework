@@ -8,7 +8,7 @@ def xss():
         content = f.readlines()
     payloads = [x.strip() for x in content]
     print(T + "Works best if there is a query at the end. eg. http://example.com?search=" + W)
-    url = input(''+T+'' + color.UNDERLINE + 'Full URL> ' + color.END)
+    url = raw_input(''+T+'' + color.UNDERLINE + 'Full URL> ' + color.END)
     vuln = []
     for payload in payloads:
         payload = payload

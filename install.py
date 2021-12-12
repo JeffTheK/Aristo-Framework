@@ -22,7 +22,7 @@ print("\n--------------------------")
 print("(1) Kali Linux / Ubuntu / Raspbian")
 print("--------------------------\n")
 
-option = input("\033[0m[>] Select Operating System: \033[0m")
+option = raw_input("\033[0m[>] Select Operating System: \033[0m")
 
 if option == "1":
     print("\033[1;33m[*] Loading...\033[0m")
