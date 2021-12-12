@@ -40,9 +40,9 @@ def sms():
     o.login(gmail, password)
 
     message = raw_input(color.UNDERLINE + 'Message>' + color.END)
-    print ""+T+" "
+    print(""+T+" ")
     counter = input(color.UNDERLINE + 'How many times>' + color.END)
-    print ""+T+" "
+    print(""+T+" ")
     spam_msg = "From: {} \r\nTo: {} \r\n\r\n {}".format(gmail, phone_num, message)
     print (color.UNDERLINE + ''+G+'[*] Sending...' + color.END)
     for i in range(counter):
