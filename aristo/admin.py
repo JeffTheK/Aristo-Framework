@@ -32,30 +32,30 @@ class color:
 from urllib2 import Request, urlopen, URLError, HTTPError
 def admin():
     def Space(j):
-	    i = 0
-	    while i<=j:
-		    print(" ",)
-		    i+=1
+        i = 0
+        while i<=j:
+            print(" ",)
+            i+=1
 
 
     def findAdmin():
-	    f = open("link.txt","r")
-	    link = raw_input(T + color.UNDERLINE + 'Site>' + color.END)
-	    print("\n\nAvailable links : \n")
-	    print(""+G+"[*] "+W+"Scanning...")
-	    while True:
+        f = open("link.txt","r")
+        link = raw_input(T + color.UNDERLINE + 'Site>' + color.END)
+        print("\n\nAvailable links : \n")
+        print(""+G+"[*] "+W+"Scanning...")
+        while True:
             time.sleep(0.5)
-		    sub_link = f.readline()
-		    if not sub_link:
-			    break
-		    req_link = "http://"+link+"/"+sub_link
-		    req = Request(req_link)
-		    try:
-			    response = urlopen(req)
-		    except HTTPError as e:
-			    continue
-		    except URLError as e:
-			    continue
-		    else:
-			    print(""+G+"Available -> "+W+"",req_link)
+            sub_link = f.readline()
+            if not sub_link:
+                break
+            req_link = "http://"+link+"/"+sub_link
+            req = Request(req_link)
+            try:
+                response = urlopen(req)
+            except HTTPError as e:
+                continue
+            except URLError as e:
+                continue
+            else:
+                print(""+G+"Available -> "+W+"",req_link)
     findAdmin()
