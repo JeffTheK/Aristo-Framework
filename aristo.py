@@ -254,12 +254,12 @@ def aristomain():
                 print(''+T+'' + color.UNDERLINE + 'XMPP:'+W+'' + color.BOLD + ' toxic-ig@exploit.im' + color.END)
                 print(''+T+'' + color.UNDERLINE + 'Twitter:'+W+'' + color.BOLD + ' @toxicnull' + color.END)
             elif main == "ping":
-            while True:
-                hostname = raw_input(''+T+'' + color.UNDERLINE + 'Host>' + color.END)
-                os.system("ping " + hostname)
+                while True:
+                    hostname = raw_input(''+T+'' + color.UNDERLINE + 'Host>' + color.END)
+                    os.system("ping " + hostname)
             elif main == "craft":
-            while True:
-                table()
+                while True:
+                    table()
             elif main == "whois":
                 whoisweb()
             elif main == "admin":
@@ -269,7 +269,7 @@ def aristomain():
                 banner()
                 banner1()
             elif main == "speak":
-            while True:
+                while True:
                     speak = raw_input(''+T+'' + color.UNDERLINE + 'What to say>' + color.END)
                     os.system('espeak "' + speak + '"')
             elif main == "clone":
@@ -282,11 +282,11 @@ def aristomain():
                     print (""+R+"[!] " + color.UNDERLINE + "\033[91m" + "That is not a directory!" + color.END)
             elif main == "tool":
                 print(color.UNDERLINE + ''+C+'Version: ' + (VersionNum) + color.END)
-            print(color.UNDERLINE + ''+C+'34 options to choose from!' + color.END)
+                print(color.UNDERLINE + ''+C+'34 options to choose from!' + color.END)
                 print(color.UNDERLINE + ''+C+'Time spent on it: 76 hours - 14 minutes' + color.END)
                 print(color.UNDERLINE + ''+C+'toxic is a sp00ky h4ck3r' + color.END)
             elif main == "website":
-            while True:
+                while True:
                     a = raw_input(''+T+'' + color.UNDERLINE + 'Website>' + color.END)
                     try:
                         print socket.gethostbyname(a)
@@ -304,13 +304,13 @@ def aristomain():
             elif main == "clear":
                 os.system('clear')
                 elif main == "exit":
-                print (""+G+"[*] " + color.UNDERLINE + "\033[91m" + "Exiting..." + color.END)
-                print (""+G+"[*] " + color.UNDERLINE + "\033[92m" + "GoodBye!" + color.END)
-                time.sleep(0.2)
-                sys.exit()
+                    print (""+G+"[*] " + color.UNDERLINE + "\033[91m" + "Exiting..." + color.END)
+                    print (""+G+"[*] " + color.UNDERLINE + "\033[92m" + "GoodBye!" + color.END)
+                    time.sleep(0.2)
+                    sys.exit()
             elif main == "":
                 print (""+R+"[!] " + color.UNDERLINE + "\033[91m" + "Please enter an option!" + color.END)
-                else:
+            else:
                 print (""+R+"[!] " + color.UNDERLINE + "\033[91m" + "That is not an option!" + color.END)
             except KeyboardInterrupt:
             print (""+R+"[!] " + color.UNDERLINE + "\033[91m" + "\nCtrl-C Pressed! Use 'exit' to close the tool!" + color.END)
