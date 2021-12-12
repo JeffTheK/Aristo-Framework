@@ -34,17 +34,17 @@ def admin():
     def Space(j):
 	    i = 0
 	    while i<=j:
-		    print " ",
+		    print(" ",)
 		    i+=1
 
 
     def findAdmin():
-	    f = open("link.txt","r");
+	    f = open("link.txt","r")
 	    link = raw_input(T + color.UNDERLINE + 'Site>' + color.END)
-	    print "\n\nAvailable links : \n"
-	    print ""+G+"[*] "+W+"Scanning..."
+	    print("\n\nAvailable links : \n")
+	    print(""+G+"[*] "+W+"Scanning...")
 	    while True:
-                    time.sleep(0.5)
+            time.sleep(0.5)
 		    sub_link = f.readline()
 		    if not sub_link:
 			    break
@@ -57,5 +57,5 @@ def admin():
 		    except URLError as e:
 			    continue
 		    else:
-			    print ""+G+"Available -> "+W+"",req_link
+			    print(""+G+"Available -> "+W+"",req_link)
     findAdmin()
