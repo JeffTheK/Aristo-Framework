@@ -33,14 +33,14 @@ def sql():
             body = resp.read()
             fullbody = body.decode('utf-8')
         except:
-            print R + "[-] Error! Manually check this payload: " + W + payload
+            print(R + "[-] Error! Manually check this payload: " + W + payload)
             errorr = "no"
             #sys.exit()
         if errormsg in fullbody:
             if errorr == "no":
-                print R + "[-] That payload might not work!"
+                print(R + "[-] That payload might not work!")
                 errorr = "yes"
             else:
-                print G + "[+] The website IS SQL injection vulnerable! Payload: " + W + payload
+                print(G + "[+] The website IS SQL injection vulnerable! Payload: " + W + payload)
         else:
-            print R + "[-] The website is NOT SQL injection vulnerable!" + W
+            print(R + "[-] The website is NOT SQL injection vulnerable!" + W)
