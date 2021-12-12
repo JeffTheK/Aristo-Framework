@@ -303,11 +303,11 @@ def aristomain():
                 print(geoip)
             elif main == "clear":
                 os.system('clear')
-                elif main == "exit":
-                    print (""+G+"[*] " + color.UNDERLINE + "\033[91m" + "Exiting..." + color.END)
-                    print (""+G+"[*] " + color.UNDERLINE + "\033[92m" + "GoodBye!" + color.END)
-                    time.sleep(0.2)
-                    sys.exit()
+            elif main == "exit":
+                print (""+G+"[*] " + color.UNDERLINE + "\033[91m" + "Exiting..." + color.END)
+                print (""+G+"[*] " + color.UNDERLINE + "\033[92m" + "GoodBye!" + color.END)
+                time.sleep(0.2)
+                sys.exit()
             elif main == "":
                 print (""+R+"[!] " + color.UNDERLINE + "\033[91m" + "Please enter an option!" + color.END)
             else:
