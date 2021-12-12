@@ -123,28 +123,28 @@ banner()
 #------------------- Onto the real stuff --------------------#
 #============================================================#
 def banner1():
-    print ""
-    print ""+M+"|----- Made byAITZAZ IMTIAZ--- -----|"
-    print color.DARKCYAN +"|-----      Version: {}        -----|".format(VersionNum)
-    print color.WARNING + "|-----   1 tool - 34 choices    -----|"
-    print color.PURPLE + "\n|----- A Warm Welcome to Aristo! -----|"
-    print color.BLUE + "|----- Network Pentesting tool! -----|"
-    print color.YELLOW + "|----- Have Fun and Stay Legal! -----|"
+    print("")
+    print(""+M+"|----- Made byAITZAZ IMTIAZ--- -----|")
+    print(color.DARKCYAN +"|-----      Version: {}        -----|".format(VersionNum))
+    print(color.WARNING + "|-----   1 tool - 34 choices    -----|")
+    print(color.PURPLE + "\n|----- A Warm Welcome to Aristo! -----|")
+    print(color.BLUE + "|----- Network Pentesting tool! -----|")
+    print(color.YELLOW + "|----- Have Fun and Stay Legal! -----|")
 
 time.sleep(0.1)
-print ""
+print()
 time.sleep(0.1)
-print ""+M+"|----- Made byAITZAZ IMTIAZ--- -----|" 
+print(""+M+"|----- Made byAITZAZ IMTIAZ--- -----|")
 time.sleep(0.1)
-print color.DARKCYAN + "|-----      Version: {}        -----|".format(VersionNum)
+print(color.DARKCYAN + "|-----      Version: {}        -----|".format(VersionNum))
 time.sleep(0.1)
-print color.WARNING + "|-----   1 tool - 34 choices    -----|"
+print(color.WARNING + "|-----   1 tool - 34 choices    -----|")
 time.sleep(0.1) 
-print color.PURPLE + "\n|----- A Warm Welcome to Aristo! -----|"
+print(color.PURPLE + "\n|----- A Warm Welcome to Aristo! -----|")
 time.sleep(0.1)
-print color.BLUE + "|----- Awesome Pentesting tool! -----|"
+print(color.BLUE + "|----- Awesome Pentesting tool! -----|")
 time.sleep(0.1)
-print color.YELLOW + "|----- Have Fun and Stay Legal! -----|"
+print(color.YELLOW + "|----- Have Fun and Stay Legal! -----|")
 time.sleep(0.1)
 r = requests.get('http://pastebin.com/raw/vYcBSV4w') 
 
@@ -163,27 +163,27 @@ def aristomain():
                 print(""+R+"[!] " + color.UNDERLINE + "\033[91m" + "Watch your language!" + color.END)
         elif main in spell:
                 print(""+R+"[!] " + color.UNDERLINE + "\033[91m" + "Do you know how to spell?!" + color.END)
-            elif main == "joke":
+        elif main == "joke":
                 joke()
-            elif main == "info":
+        elif main == "info":
                 info()
-            elif main == "help":
-                print ""+W+"+----------------------------+"
-                print ""+C+"help "+W+"- displays this help message"
-                print ""+C+"clear "+W+"- clears the screen"
-                print ""+C+"exit "+W+"- exits tool"
-                print ""+C+"tool "+W+"- displays info about the tool"
-                print ""+C+"info "+W+"- displays computer and network info"
-                print ""+C+"cd "+W+"- change working directories"
-                print ""+W+"+----------------------------+"
-                print ""+P+"speak "+W+"- text to speech"
-                print ""+P+"ping "+W+"- ping a host"
-                print ""+P+"banner "+W+"- print a new banner"
-                print ""+P+"joke "+W+"- tell a joke"
-                print ""+P+"quote "+W+"- print a quote"
-                print ""+P+"contact "+W+"- contact me"
-                print ""+W+"+----------------------------+"
-                print ""+R+"website "+W+"- enter a website and get its ip"
+        elif main == "help":
+            print ""+W+"+----------------------------+"
+            print ""+C+"help "+W+"- displays this help message"
+            print ""+C+"clear "+W+"- clears the screen"
+            print ""+C+"exit "+W+"- exits tool"
+            print ""+C+"tool "+W+"- displays info about the tool"
+            print ""+C+"info "+W+"- displays computer and network info"
+            print ""+C+"cd "+W+"- change working directories"
+            print ""+W+"+----------------------------+"
+            print ""+P+"speak "+W+"- text to speech"
+            print ""+P+"ping "+W+"- ping a host"
+            print ""+P+"banner "+W+"- print a new banner"
+            print ""+P+"joke "+W+"- tell a joke"
+            print ""+P+"quote "+W+"- print a quote"
+            print ""+P+"contact "+W+"- contact me"
+            print ""+W+"+----------------------------+"
+            print ""+R+"website "+W+"- enter a website and get its ip"
             print ""+R+"clone"+W+" - clone a websites source "
             print ""+R+"whois"+W+" - whois a website"
             print ""+R+"web"+W+" - extract info from a website"
