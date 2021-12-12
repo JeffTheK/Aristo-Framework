@@ -13,7 +13,7 @@ from crafttable import *
 from info import *
 from anon import *
 from twitter import *
-from whoisweb import *
+# from whoisweb import * FIXME: doesn work
 from coder import *
 from clone import *
 from admin import *
