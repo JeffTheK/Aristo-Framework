@@ -289,9 +289,9 @@ def aristomain():
                 while True:
                     a = raw_input(''+T+'' + color.UNDERLINE + 'Website>' + color.END)
                     try:
-                        print socket.gethostbyname(a)
+                        print(socket.gethostbyname(a))
                     except socket.gaierror:
-                        print (""+R+"[!] " + color.UNDERLINE + "\033[91m" + "Apparently host is unknown! :/" + color.END)
+                        print((""+R+"[!] " + color.UNDERLINE + "\033[91m" + "Apparently host is unknown! :/" + color.END))
             elif main == "ip":
                 ip = raw_input(''+T+'' + color.UNDERLINE + 'IP>' + color.END)
                 if ip is None or ip == "":
@@ -299,8 +299,8 @@ def aristomain():
                 reversed_dns = socket.getfqdn(ip)
                 geoip = urllib.urlopen('http://api.hackertarget.com/geoip/?q='
                                    + ip).read().rstrip()
-                print (""+G+"[*] " + color.UNDERLINE + "\033[91m" + "IP Info" + color.END)
-                print geoip
+                print(""+G+"[*] " + color.UNDERLINE + "\033[91m" + "IP Info" + color.END)
+                print(geoip)
             elif main == "clear":
                 os.system('clear')
                 elif main == "exit":
