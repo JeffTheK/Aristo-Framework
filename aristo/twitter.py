@@ -29,7 +29,7 @@ def twitter():
             sys.exit(0)
 
 
-    u = raw_input(''+T+'' + color.UNDERLINE + 'Username>' + color.END)
+    u = input(''+T+'' + color.UNDERLINE + 'Username>' + color.END)
 
 
 

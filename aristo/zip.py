@@ -4,8 +4,8 @@ from color import *
 
 def zipfile():
 	print(""+C+"Files have to be in the same directory - Include .zip or .txt")
-	zipfilename = raw_input(''+T+'' + color.UNDERLINE + 'Zip file>' + color.END)
-	dictionary = raw_input(''+T+'' + color.UNDERLINE + 'Dictionary file>' + color.END)
+	zipfilename = input(''+T+'' + color.UNDERLINE + 'Zip file>' + color.END)
+	dictionary = input(''+T+'' + color.UNDERLINE + 'Dictionary file>' + color.END)
 	print(""+G+"[*] "+W+"Cracking...")
 	password = None
 	zip_file = zipfilename

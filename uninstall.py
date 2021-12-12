@@ -28,7 +28,7 @@ C  = '\033[36m' # cyan
 GR = '\033[37m' # gray
 T  = '\033[93m' # tan
 M = '\033[1;35;32m' # magenta
-main = raw_input (''+T+'' + color.UNDERLINE + 'Do you really want to uninstall Aristo?>' + color.END)
+main = input (''+T+'' + color.UNDERLINE + 'Do you really want to uninstall Aristo?>' + color.END)
 if main == "yes" or "y" or "Yes" or "Y":
     try:
         shutil.rmtree('/opt/aristo')
