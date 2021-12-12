@@ -1,7 +1,7 @@
 # coding: utf-8
 #!/usr/bin/env python
-import sys, platform, subprocess, socket, time, os, urllib,  random, string, smtplib, urllib2, getpass, zipfile
-from urllib2 import urlopen
+import sys, platform, subprocess, socket, time, os, urllib,  random, string, smtplib, urllib.request, getpass, zipfile
+from urllib.request import urlopen
 from time import sleep
 from getpass import getpass
 from subprocess import call
