@@ -161,56 +161,56 @@ def aristomain():
             main = raw_input(''+G+'' + color.BOLD + color.UNDERLINE + 'Tri>' + color.END)
             if main in swear:
                 print(""+R+"[!] " + color.UNDERLINE + "\033[91m" + "Watch your language!" + color.END)
-        elif main in spell:
+            elif main in spell:
                 print(""+R+"[!] " + color.UNDERLINE + "\033[91m" + "Do you know how to spell?!" + color.END)
-        elif main == "joke":
+            elif main == "joke":
                 joke()
-        elif main == "info":
+            elif main == "info":
                 info()
-        elif main == "help":
-            print ""+W+"+----------------------------+"
-            print ""+C+"help "+W+"- displays this help message"
-            print ""+C+"clear "+W+"- clears the screen"
-            print ""+C+"exit "+W+"- exits tool"
-            print ""+C+"tool "+W+"- displays info about the tool"
-            print ""+C+"info "+W+"- displays computer and network info"
-            print ""+C+"cd "+W+"- change working directories"
-            print ""+W+"+----------------------------+"
-            print ""+P+"speak "+W+"- text to speech"
-            print ""+P+"ping "+W+"- ping a host"
-            print ""+P+"banner "+W+"- print a new banner"
-            print ""+P+"joke "+W+"- tell a joke"
-            print ""+P+"quote "+W+"- print a quote"
-            print ""+P+"contact "+W+"- contact me"
-            print ""+W+"+----------------------------+"
-            print ""+R+"website "+W+"- enter a website and get its ip"
-            print ""+R+"clone"+W+" - clone a websites source "
-            print ""+R+"whois"+W+" - whois a website"
-            print ""+R+"web"+W+" - extract info from a website"
-            print ""+R+"siteexists"+W+" - check if a site exists"
-            print ""+R+"google"+W+" - find google results for a query"
-                print ""+W+"+----------------------------+"
-            print ""+G+"ip "+W+"- geolocate an ip"
-                print ""+W+"+----------------------------+"
-            print ""+O+"xss "+W+"- simple check for a xss vulnerability"
-            print ""+O+"sql "+W+"- basic check for a sql vulnerability"
-            print ""+O+"admin "+W+"- scan a website for its admin panel"
-                print ""+W+"+----------------------------+"
-            print ""+T+"email "+W+"- bomb an email address"
-            print ""+T+"spoof email "+W+"- spoof an email address"
-            print ""+T+"anonymous "+W+"- send an anonymous email"
-            print ""+T+"sms"+W+" - spam text messages "
-                print ""+T+"twitter"+W+" - check the details of a twitter account"
-                print ""+W+"+----------------------------+"
-            print color.CYAN + "craft"+W+" - generate useful scripts "
-            print color.CYAN + "qr"+W+" - generate a qr code"
-            print color.CYAN + "zip"+W+" - crack a password-protected zip file"
-                print ""+W+"+----------------------------+"
-            print color.BLUE + "encode base64"+W+" - text to base64"
-            print color.BLUE + "decode base64"+W+" - base64 to text"
-            print color.BLUE + "encode hex"+W+" - text to hex"
-            print color.BLUE + "decode hex"+W+" - hex to text"
-                print ""+W+"+----------------------------+"
+            elif main == "help":
+                print(""+W+"+----------------------------+")
+                print(""+C+"help "+W+"- displays this help message")
+                print(""+C+"clear "+W+"- clears the screen")
+                print(""+C+"exit "+W+"- exits tool")
+                print(""+C+"tool "+W+"- displays info about the tool")
+                print(""+C+"info "+W+"- displays computer and network info")
+                print(""+C+"cd "+W+"- change working directories")
+                print(""+W+"+----------------------------+")
+                print(""+P+"speak "+W+"- text to speech")
+                print(""+P+"ping "+W+"- ping a host")
+                print(""+P+"banner "+W+"- print a new banner")
+                print(""+P+"joke "+W+"- tell a joke")
+                print(""+P+"quote "+W+"- print a quote")
+                print(""+P+"contact "+W+"- contact me")
+                print(""+W+"+----------------------------+")
+                print(""+R+"website "+W+"- enter a website and get its ip")
+                print(""+R+"clone"+W+" - clone a websites source ")
+                print(""+R+"whois"+W+" - whois a website")
+                print(""+R+"web"+W+" - extract info from a website")
+                print(""+R+"siteexists"+W+" - check if a site exists")
+                print(""+R+"google"+W+" - find google results for a query")
+                print(""+W+"+----------------------------+")
+                print(""+G+"ip "+W+"- geolocate an ip")
+                print(""+W+"+----------------------------+")
+                print(""+O+"xss "+W+"- simple check for a xss vulnerability")
+                print(""+O+"sql "+W+"- basic check for a sql vulnerability")
+                print(""+O+"admin "+W+"- scan a website for its admin panel")
+                print(""+W+"+----------------------------+")
+                print(""+T+"email "+W+"- bomb an email address")
+                print(""+T+"spoof email "+W+"- spoof an email address")
+                print(""+T+"anonymous "+W+"- send an anonymous email")
+                print(""+T+"sms"+W+" - spam text messages ")
+                print(""+T+"twitter"+W+" - check the details of a twitter account")
+                print(""+W+"+----------------------------+")
+                print(color.CYAN + "craft"+W+" - generate useful scripts ")
+                print(color.CYAN + "qr"+W+" - generate a qr code")
+                print(color.CYAN + "zip"+W+" - crack a password-protected zip file")
+                print(""+W+"+----------------------------+")
+                print(color.BLUE + "encode base64"+W+" - text to base64")
+                print(color.BLUE + "decode base64"+W+" - base64 to text")
+                print(color.BLUE + "encode hex"+W+" - text to hex")
+                print(color.BLUE + "decode hex"+W+" - hex to text")
+                print(""+W+"+----------------------------+")
             elif main == "sms":
             sms()
         elif main == "xss":
