@@ -26,4 +26,4 @@ def whoisweb():
     domains = [h]
     for dom in domains:
         details = pythonwhois.get_whois(dom)
-        print details['contacts']['registrant'] 
+        print(details['contacts']['registrant'] )
