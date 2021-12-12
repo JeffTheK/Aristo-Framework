@@ -41,7 +41,7 @@ def xss():
         else:
             print R + "[!] Not vulnerable!" + W
 
-    print "--------------------\n" + G + "Available Payloads:" + W
-    print '\n'.join(vuln)
+    print("--------------------\n" + G + "Available Payloads:" + W)
+    print('\n'.join(vuln))
 
 
