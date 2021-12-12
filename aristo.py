@@ -83,8 +83,8 @@ M = '\033[1;35;32m' # magenta
 os.system('clear')
 if str(platform.system()) != "Linux":
     sys.exit(""+R+"[!] " + color.UNDERLINE + "\033[91m" + "You are not using a Linux Based OS! Linux is a must-have for this script!" + color.END)
-if not os.geteuid() == 0:
-    sys.exit(""+R+"[!] " + color.UNDERLINE + "\033[91m" + "Must be run as root. :/" + color.END)
+#if not os.geteuid() == 0: FIXME: We dont need to be sudo. Fix any code that requires root
+#    sys.exit(""+R+"[!] " + color.UNDERLINE + "\033[91m" + "Must be run as root. :/" + color.END)
 if 'no' in open('agree.txt').read():# take out the aristo/
     print(color.BOLD + """
 Note that Aristo is provided as is, and is a royalty free open-source application.
