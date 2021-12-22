@@ -9,15 +9,15 @@ from color import *
 ############################################################################
 def smtp():
     attack = '@gmail.com'
-    phone_num = inputor.UNDERLINE + ''+T+'Victims email>' + color.END) + str(attack)
-    gmail = inputor.UNDERLINE + ''+T+'Your Email>' + color.END)
+    phone_num = input(color.UNDERLINE + ''+T+'Victims email>' + color.END) + str(attack)
+    gmail = input(color.UNDERLINE + ''+T+'Your Email>' + color.END)
     password = getpass((color.UNDERLINE + ''+T+'Password>' + color.END))
 
     o = smtplib.SMTP("smtp.gmail.com:587")
     o.starttls()
     o.login(gmail, password)
-    subject = inputor.UNDERLINE + ''+T+'Subject>' + color.END)
-    message = inputor.UNDERLINE + ''+T+'Message to send>' + color.END)
+    subject = input(color.UNDERLINE + ''+T+'Subject>' + color.END)
+    message = input(color.UNDERLINE + ''+T+'Message to send>' + color.END)
     counter = input(color.UNDERLINE + ''+T+'How many times>' + color.END)
     spam_msg = "From: {} \r\nTo: {} \r\nSubject: {} \r\n\r\n {}".format(gmail, phone_num, subject, message)
 
