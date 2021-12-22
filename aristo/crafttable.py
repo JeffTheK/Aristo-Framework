@@ -4,7 +4,7 @@ import color
 from color import *
 
 def table():
-    table = inputG+'' + color.UNDERLINE + 'Tri>Craft>' + color.END)
+    table = input(G+'' + color.UNDERLINE + 'Tri>Craft>' + color.END)
     if table == "backdoor":
         print (''+G+'[*] ' + color.UNDERLINE + ''+W+'Generating backdoor...' + color.END)
         print (''+G+'[*] ' + color.UNDERLINE + ''+W+'For all your remote access needs!' + color.END)	
