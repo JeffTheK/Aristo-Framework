@@ -5,10 +5,10 @@ from color import *
 def anon():
     br = mechanize.Browser()
 
-    to = input "Enter the recipient address: ")
-    subject = inputter the subject: ")
+    to = input("Enter the recipient address: ")
+    subject = "inputter the subject: "
     print("Message: ")
-    message = input)
+    message = input()
 
     #proxy = "http://127.0.0.1:8080"
 
