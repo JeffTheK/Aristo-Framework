@@ -1,12 +1,13 @@
 import mechanize
-W  = '\033[0m'  # white (normal)
-R  = '\033[31m' # red
+import color
+from color import *
+
 def anon():
     br = mechanize.Browser()
 
     to = raw_input(R + "Enter the recipient address: ")
     subject = raw_input("Enter the subject: ")
-    print "Message: "
+    print("Message: ")
     message = raw_input(">")
 
     #proxy = "http://127.0.0.1:8080"
@@ -36,6 +37,6 @@ def anon():
 
 
     if "The e-mail has been sent anonymously!" in response:
-        print "The email has been sent successfully!! \n The recipient will get it in up to 12 hours!"
+        print("The email has been sent successfully!! \n The recipient will get it in up to 12 hours!")
     else:
-        print "Failed to send email!"
+        print("Failed to send email!")
